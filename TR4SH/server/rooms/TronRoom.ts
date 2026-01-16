@@ -19,9 +19,9 @@ class TronState extends Schema {
 
 export class TronRoom extends Room<TronState> {
     maxClients = 2;
-    private gameSpeed = 100;
+    private gameSpeed = 60;
     private gameInterval: NodeJS.Timeout;
-    private gridSize = 5;
+    private gridSize = 7;
 
     onCreate(options: any) {
         this.setState(new TronState());
