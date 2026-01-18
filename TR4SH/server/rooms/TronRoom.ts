@@ -24,7 +24,7 @@ export class TronRoom extends Room<TronState> {
     private gridSize = 7;
 
     onCreate(options: any) {
-        this.setState(new TronState());
+        this.state = new TronState();
         this.setPrivate(false);
 
         this.onMessage("keypress", (client, message) => {
